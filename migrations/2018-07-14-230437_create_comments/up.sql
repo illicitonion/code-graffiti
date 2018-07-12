@@ -1,0 +1,9 @@
+CREATE TABLE comments (
+  id SERIAL PRIMARY KEY,
+  repo_user VARCHAR NOT NULL,
+  repo_name VARCHAR NOT NULL,
+  path VARCHAR NOT NULL,
+  sha VARCHAR NOT NULL,
+  line INTEGER NOT NULL,
+  comment TEXT NOT NULL
+)
